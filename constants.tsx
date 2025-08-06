@@ -111,9 +111,9 @@ export const PROJECTS: Project[] = [
     title: 'Bias Audit Report', 
     category: 'AI/ML', 
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3', 
-    url: '#',
+    url: 'https://colab.research.google.com/drive/19ux4V8PrKQI3vbsKTGbBqAQc_LSYF5C1?usp=sharing',
     repoUrl: '#',
-    documentationUrl: '#'
+    documentationUrl: 'https://capeitinitiative-my.sharepoint.com/:w:/g/personal/craig_magagula_capaciti_org_za/ESdGffFstZ9JmBqmuXVvz-oB3LObf0F2OGNyHPh_xi7--A?e=rdX8E5'
   },
   { 
     title: 'AI Prototype', 
