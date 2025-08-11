@@ -9,7 +9,7 @@ import {
 
 export const PERSONAL_INFO = {
   name: 'Craig Magagula',
-  about: 'A detail-oriented Full-Stack Developer specializing in Artificial Intelligence and Machine Learning. Passionate about building intelligent, data-driven applications that solve real-world problems. My objective is to leverage my skills in modern frontend frameworks and AI/ML APIs to contribute to innovative projects and grow as an AI/ML Engineer.',
+  about: 'A detail-oriented Front-End Developer specializing in IT Support, Artificial Intelligence and Machine Learning. Passionate about building intelligent, data-driven applications that solve real-world problems. My objective is to leverage my skills in modern frontend frameworks and AI/ML APIs to contribute to innovative projects and grow as an AI/ML Engineer.',
   email: 'craigthabo0@gmail.com',
   phone: '+1 123 456 7890',
   cvUrl: 'https://capeitinitiative.sharepoint.com/sites/DemandProgramme2JHBITsupport/Shared%20Documents/General/Personal%20branding/Craig%20Magagula/(Craig)%202024%20Candidate%20CV%20V2.pdf?CT=1754431889182'
@@ -30,7 +30,7 @@ export const SOCIALS: SocialLink[] = [
   { name: 'Email', url: `mailto:${PERSONAL_INFO.email}`, icon: <Mail size={18}/> },
 ];
 
-export const TYPING_TITLES = ['AI/ML Engineer', 'Prompt Engineer', 'Front-End Developer'];
+export const TYPING_TITLES = ['AI/ML Engineer', 'Prompt Engineer', 'IT Support', 'Front-End Developer'];
 
 export const CONTACT_DETAILS = [
   {
