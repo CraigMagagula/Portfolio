@@ -1,6 +1,7 @@
-import React, { RefObject } from 'react';
-import { EDUCATIONS, JOBS, TECH_STACK } from '../constants';
-import type { ResumeItem, TechSkill, ResumeRefs } from '../types';
+import React from 'react';
+import { EDUCATIONS, JOBS, TECH_STACK, CERTIFICATES } from '../constants';
+import type { ResumeItem, TechSkill, ResumeRefs, Certificate } from '../types';
+import { ExternalLink } from 'lucide-react';
 
 const ResumeItemCard: React.FC<{ item: ResumeItem }> = ({ item }) => (
   <div className="bg-black/20 backdrop-blur-sm p-5 rounded-lg border-l-4 border-[#c165dd] border border-slate-100/10 shadow-md transition-transform transform hover:-translate-y-1 duration-300">
@@ -16,6 +17,21 @@ const SkillCard: React.FC<{ skill: TechSkill }> = ({ skill }) => (
     <span className="text-sm font-medium text-slate-200 text-center">{skill.name}</span>
   </div>
 );
+
+const CertificateCard: React.FC<{ item: Certificate }> = ({ item }) => (
+  <div className="bg-black/20 backdrop-blur-sm p-5 rounded-lg border border-slate-100/10 shadow-md transition-transform transform hover:-translate-y-1 duration-300 flex flex-col h-full">
+    <div className="flex-grow">
+      <h3 className="text-lg font-bold text-white mb-1">{item.title}</h3>
+      <p className="text-[#c165dd] font-semibold text-sm mb-3">{item.issuer}</p>
+      <p className="text-slate-300 text-sm mb-4">{item.description}</p>
+    </div>
+    <a href={item.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 self-start px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold rounded-lg shadow-md hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 transform hover:scale-105">
+      <ExternalLink size={16} />
+      View Certificate
+    </a>
+  </div>
+);
+
 
 interface ResumeProps {
   refs: ResumeRefs;
@@ -54,6 +70,15 @@ const Resume: React.FC<ResumeProps> = ({ refs }) => {
         <div className="grid md:grid-cols-2 gap-6">
           {EDUCATIONS.map((item, index) => (
             <ResumeItemCard key={index} item={item} />
+          ))}
+        </div>
+      </div>
+
+      <div ref={refs.certificates} id="certificates">
+        <h2 className="text-2xl font-bold text-white mb-6">Certificates & Achievements</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          {CERTIFICATES.map((item, index) => (
+            <CertificateCard key={index} item={item} />
           ))}
         </div>
       </div>
