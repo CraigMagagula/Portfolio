@@ -16,6 +16,7 @@ const App: React.FC = () => {
     jobs: useRef<HTMLDivElement>(null),
     projects: useRef<HTMLDivElement>(null),
     educations: useRef<HTMLDivElement>(null),
+    certificates: useRef<HTMLDivElement>(null),
   };
 
   useEffect(() => {
@@ -74,7 +75,7 @@ const App: React.FC = () => {
           <main ref={mainContentRef} className="flex-1 overflow-y-auto scroll-smooth custom-scrollbar">
             <div className="p-6 md:p-10 space-y-12">
               <div ref={sectionRefs.about} id="about"><About /></div>
-              <Resume refs={{ skills: sectionRefs.skills, jobs: sectionRefs.jobs, educations: sectionRefs.educations }}/>
+              <Resume refs={{ skills: sectionRefs.skills, jobs: sectionRefs.jobs, educations: sectionRefs.educations, certificates: sectionRefs.certificates }}/>
               <div ref={sectionRefs.projects} id="projects"><Works /></div>
             </div>
           </main>
