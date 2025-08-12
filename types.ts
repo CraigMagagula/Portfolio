@@ -39,8 +39,17 @@ export interface Project {
   description?: string;
 }
 
+export interface Certificate {
+  title: string;
+  issuer: string;
+  description: string;
+  url: string;
+}
+
 export interface ResumeRefs {
   skills: RefObject<HTMLDivElement>;
   jobs: RefObject<HTMLDivElement>;
   educations: RefObject<HTMLDivElement>;
+  certificates: RefObject<HTMLDivElement>;
+}MLDivElement>;
 }
