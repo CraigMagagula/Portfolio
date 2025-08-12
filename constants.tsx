@@ -1,15 +1,14 @@
 
-
 import React from 'react';
-import type { Category, SocialLink, ResumeItem, TechCategory, Project } from './types';
+import type { Category, SocialLink, ResumeItem, TechCategory, Project, Certificate } from './types';
 import { 
   Github, Linkedin, Send, Phone, Mail, User, Shapes, Briefcase, FolderGit2, GraduationCap,
-  Sparkles, BrainCircuit, Wind, Shield, Link as LinkIcon
+  Sparkles, BrainCircuit, Wind, Shield, Link as LinkIcon, Award
 } from 'lucide-react';
 
 export const PERSONAL_INFO = {
   name: 'Craig Magagula',
-  about: 'A detail-oriented Front-End Developer specializing in IT Support, Artificial Intelligence and Machine Learning. Passionate about building intelligent, data-driven applications that solve real-world problems. My objective is to leverage my skills in modern frontend frameworks and AI/ML APIs to contribute to innovative projects and grow as an AI/ML Engineer.',
+  about: 'A detail-oriented Full-Stack Developer specializing in Artificial Intelligence and Machine Learning. Passionate about building intelligent, data-driven applications that solve real-world problems. My objective is to leverage my skills in modern frontend frameworks and AI/ML APIs to contribute to innovative projects and grow as an AI/ML Engineer.',
   email: 'craigthabo0@gmail.com',
   phone: '+1 123 456 7890',
   cvUrl: 'https://capeitinitiative.sharepoint.com/sites/DemandProgramme2JHBITsupport/Shared%20Documents/General/Personal%20branding/Craig%20Magagula/(Craig)%202024%20Candidate%20CV%20V2.pdf?CT=1754431889182'
@@ -21,6 +20,7 @@ export const CATEGORIES: Category[] = [
   { id: 'jobs', name: 'Jobs', icon: <Briefcase size={18}/> },
   { id: 'projects', name: 'Projects', icon: <FolderGit2 size={18}/> },
   { id: 'educations', name: 'Educations', icon: <GraduationCap size={18}/> },
+  { id: 'certificates', name: 'Certificates', icon: <Award size={18}/> },
 ];
 
 export const SOCIALS: SocialLink[] = [
@@ -30,7 +30,7 @@ export const SOCIALS: SocialLink[] = [
   { name: 'Email', url: `mailto:${PERSONAL_INFO.email}`, icon: <Mail size={18}/> },
 ];
 
-export const TYPING_TITLES = ['AI/ML Engineer', 'Prompt Engineer', 'IT Support', 'Front-End Developer'];
+export const TYPING_TITLES = ['AI/ML Engineer', 'Prompt Engineer', 'Front-End Developer'];
 
 export const CONTACT_DETAILS = [
   {
@@ -106,11 +106,32 @@ export const JOBS: ResumeItem[] = [
   },
 ];
 
+export const CERTIFICATES: Certificate[] = [
+  {
+    title: 'Artificial Intelligence (AI) Bootcamp – Learning Pathway',
+    issuer: 'Coursera',
+    description: 'A fast-paced program covering AI fundamentals, machine learning, deep learning, and NLP. Learners build hands-on projects, gaining real-world skills to develop and deploy AI models for practical applications.',
+    url: 'https://coursera.org/share/efdafba1105d2a8c9ef2945b9643d47f',
+  },
+  {
+    title: 'Python for Data Science and AI',
+    issuer: 'IBM',
+    description: 'This badge earner has the core skills in Python such as critical data structures, programming fundamentals and experience with core libraries for data science. They can apply this knowledge to work with data and develop applications for data science.',
+    url: 'https://www.credly.com/badges/489a23bb-24e8-45e1-b932-051265164677/linked_in_profile',
+  },
+  {
+    title: 'Getting Started with Front-End and Web Development',
+    issuer: 'IBM',
+    description: 'This badge earner has expertise in front-end development, exploring roles, skills, and trends. They understand web development steps, UI/UX design, and collaboration. They also grasp concepts like web browsers, load balancing, hosting, accessibility, and cloud benefits. They can compare front-end and back-end roles, version control, and CI/CD, and discuss No-Code advantages, CMS, and SEO. They can create websites using WordPress and plugins, highlighting qualifications and specialization paths.',
+    url: 'https://www.credly.com/badges/089220c4-9ef4-415d-bfc8-a97b5a881061/linked_in_profile',
+  }
+];
+
 export const PROJECTS: Project[] = [
   { 
     title: 'Bias Audit Report', 
     category: 'AI/ML', 
-    image: 'https://www.vevox.com/getmedia/d86687df-2bfe-4dbd-b839-60e9eb17f05f/fixed-Vevox-wordcloud-bias.jpeg', 
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3', 
     url: 'https://colab.research.google.com/drive/19ux4V8PrKQI3vbsKTGbBqAQc_LSYF5C1?usp=sharing',
     repoUrl: '#',
     documentationUrl: 'https://capeitinitiative-my.sharepoint.com/:w:/g/personal/craig_magagula_capaciti_org_za/ESdGffFstZ9JmBqmuXVvz-oB3LObf0F2OGNyHPh_xi7--A?e=rdX8E5'
